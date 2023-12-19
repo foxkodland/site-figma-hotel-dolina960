@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    user-select: none;
+}
+
+:root{
+    --padding-left-main: 15vw;
+    --margin-bottom-mini: 40px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    background-image: url(images/backgroung.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+/* Общие */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* общий класс для маленькой белой кнопки */
+.btn { 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+
+    font-size: 13px;
+}
+
+.btn_black {
+    background-color: #3D324F;
+    color: white;
+}
+
+.btn_max {
+    font-size: 18px;
+    padding: 15px 24px;
+    border-radius: 12px;
+}
+
+.blur_background {
+    background-color: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(7px);
+}
+
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+
+    padding: 20px;
+
+    margin-bottom: 80px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logos img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    font-size: 18px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social button {
+    font-weight: bold;
+}
+
+
+
+/* first_block */
+/* название отеля и кнопка "быстрое бронирование"*/
+
+.first_block {
+    padding-left: var(--padding-left-main);
+    margin-bottom: 100px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: var(--margin-bottom-mini);
+}
+
+.first_block h1 {
+    
+    font-size: 60px;
+    margin-bottom: var(--margin-bottom-mini);
+}
+
+
+
+
+
+/* section - best_offers*/
+
+.best_offers {
+    padding-left: var(--padding-left-main);
+    margin-bottom: 100px;
+}
+
+.best_offers h2 {
+    
+    margin-bottom: var(--margin-bottom-mini);
+}
+
+.appartment-cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+
+    color:white;
+}
+
+.appartment-card {
+    padding: 28px 24px;
+    display: flex;
+    gap: 30px;
+    border-radius: 16px;
+}
+
+
+.appartment-card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.appartment-card .price{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.appartment-card h3{
+    font-size: 15px;
+    font-weight: 400;
+}
