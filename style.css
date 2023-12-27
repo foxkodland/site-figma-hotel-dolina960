@@ -58,6 +58,19 @@ a {
     border-radius: 12px;
 }
 
+.btn:hover,
+.btn:active{
+    background-color: #3D324F;
+    color: white;
+}
+
+.btn_black:hover,
+.btn_black:active {
+    background-color: white;
+    color: black;
+}
+
+
 .blur_background {
     background-color: rgba(255, 255, 255, 0.279);
     backdrop-filter: blur(7px);
@@ -96,11 +109,29 @@ nav {
     font-size: 18px;
 }
 
+nav a:hover {
+    
+    color: #3D324F;
+    /* scale: 1.1; */
+    transform: scale(1.1);
+}
+
+nav a {
+    display: inline-block;
+    /* transform: scale(2); */
+    transition: transform .1s;
+}
+
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+
+.social img:hover {
+    transition: transform .1s;
+    transform: scale(1.2);
 }
 
 .social button {
